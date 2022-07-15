@@ -1,0 +1,18 @@
+<div class="basic-container">
+  Directly used: test
+  <mat-tab-group>
+    <mat-tab [label]="label1">Content 1</mat-tab>
+    <mat-tab [label]="label2">Content 2</mat-tab>
+    <mat-tab [label]="label3">Content 3</mat-tab>
+  </mat-tab-group>
+  <br />
+  <br />
+  <br />
+
+  Used with wrapper component: test
+  <custom-tabs>
+    <custom-tab [label]="label1">Content A</custom-tab>
+    <custom-tab [label]="label2">Content B</custom-tab>
+    <custom-tab [label]="label3">Content C</custom-tab>
+  </custom-tabs>
+</div>
