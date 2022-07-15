@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild, OnInit } from '@angular/core';
 import { MatTab } from '@angular/material/tabs';
 
 @Component({
@@ -9,9 +9,13 @@ import { MatTab } from '@angular/material/tabs';
     </mat-tab>
   `,
 })
-export class CustomTabComponent {
+export class CustomTabComponent implements OnInit {
   @Input() label: string;
 
   @ViewChild(MatTab)
   public matTab: MatTab;
+
+  ngOnInit(): void {
+    console.log('tab group inits');
+  }
 }
