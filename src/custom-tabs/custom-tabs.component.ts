@@ -34,7 +34,7 @@ export class CustomTabsComponent {
     const list = new QueryList<MatTab>();
 
     list.reset([matTabsFromQueryList]);
-    this.tabGroup._tabs = list;
+    this.tabGroup._allTabs = list;
     this.tabGroup.ngAfterContentInit();
   }
 }
